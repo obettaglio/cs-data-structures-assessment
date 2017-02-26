@@ -3,7 +3,7 @@ def string_compare(s1, s2):
 
     Put runtime here:
     -----------------
-    [               ]
+    [O(n)]
 
 
     """
@@ -11,8 +11,8 @@ def string_compare(s1, s2):
     if len(s1) != len(s2):
         return False
 
-    for i in range(len(s1)):
-        if s1[i] != s2[i]:
+    for i in range(len(s1)):    # O(n)
+        if s1[i] != s2[i]:      # O(1)
             return False
 
     return True
@@ -23,11 +23,11 @@ def has_exotic_animals(animals):
 
     Put runtime here:
     -----------------
-    [               ]
+    [O(n)]
 
     """
 
-    if "hippo" in animals or "platpypus" in animals:
+    if "hippo" in animals or "platpypus" in animals:    # O(n)
         return True
     else:
         return False
@@ -38,7 +38,7 @@ def sum_zero_1(numbers):
 
     Put runtime here:
     -----------------
-    [               ]
+    [O(n^2)]
 
     """
 
@@ -46,10 +46,10 @@ def sum_zero_1(numbers):
 
     # Hint: the following line, "s = set(numbers)", is O(n) ---
     # we'll learn exactly why later
-    s = set(numbers)
+    s = set(numbers)      # O(n)
 
-    for x in s:
-        if -x in s:
+    for x in s:           # O(n)
+        if -x in s:       # O(n)
             result.append([-x, x])
 
     return result
@@ -60,15 +60,15 @@ def sum_zero_2(numbers):
 
     Put runtime here:
     -----------------
-    [               ]
+    [O(n^2)]
 
     """
 
     result = []
 
-    for x in numbers:
-        for y in numbers:
-            if x == -y:
+    for x in numbers:        # O(n)
+        for y in numbers:    # O(n)
+            if x == -y:      # O(1)
                 result.append((x, y))
     return result
 
@@ -80,14 +80,14 @@ def sum_zero_3(numbers):
 
     Put runtime here:
     -----------------
-    [               ]
+    [O(n^2)]
 
     """
 
     result = []
 
-    for x in numbers:
-        for y in numbers:
-            if x == -y and (y, x) not in result:
+    for x in numbers:       # O(n)
+        for y in numbers:   # O(n)
+            if x == -y and (y, x) not in result:    # O(n)
                 result.append((x, y))
     return result
