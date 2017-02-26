@@ -1,4 +1,20 @@
-# Linked list with Node/LinkedList classes
+"""Linked list with Node/LinkedList classes.
+
+Discussion Questions:
+
+1. The nodes are the boxes, including the data and next attributes.
+   The data for each node is the box containing the string.
+   The head is an attribute of the linked list pointing to the first node.
+   The tail is an optional attribute of the linked list pointing to the last node.
+
+2. A singly-linked list is a list in which each node has a next attribute that
+points to the node directly following it. A doubly-linked list has both a next
+and prev attribute, the latter of which points to the node directly preceding it.
+
+3. Without a tail attribute, the entire list must be traversed in order to find
+the last item and append to it. The presence of the tail attribute provides a
+quick jumping mechanism to a significant location in the list.
+"""
 
 
 class Node(object):

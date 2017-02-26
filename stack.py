@@ -1,3 +1,17 @@
+"""Discussion Questions:
+
+1. a) Stack
+   b) Queue
+   c) Stack
+
+2. Cutting hair and nails;
+   Passing food through the digestive tract (pooping).
+
+3. Putting on and removing rings from a finger;
+   Rolling and unrolling toilet paper.
+"""
+
+
 class StackEmptyError(IndexError):
     """Attempt to pop an empty stack."""
 

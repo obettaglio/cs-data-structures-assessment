@@ -1,4 +1,17 @@
-"""Tree class and tree node class."""
+"""Tree class and tree node class.
+
+Discussion Questions:
+
+1. Food - Italian - Indian - Mexican - lasagna - pizza - tikka masala - saag - burritos
+
+2. Food - Mexican - enchiladas - tacos - burritos - Indian - saag - tikka masala -
+   Italian - pizza - Sicilian - New York-style - Chicago-style
+
+3. A binary search tree has a search runtime of O(log n). This is possible because
+each node in a binary search tree has two children, right and left, that are assigned
+according to relation to the node. When traversing the list, choosing right or left
+effectively eliminates half of the remaining options, reducing the number of potential
+operations in worst case."""
 
 
 class Node(object):

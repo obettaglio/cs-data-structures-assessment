@@ -1,3 +1,12 @@
+"""Discussion Questions:
+
+1. The workload for finding an elephant in a box of animal crackers is determined
+by the number of crackers in the box.
+
+2. O(1), O(log n), O(n), O(n log n), O(n^2), O(2^n).
+"""
+
+
 def string_compare(s1, s2):
     """Given two strings, figure out if they are exactly the same (without using ==).
 
